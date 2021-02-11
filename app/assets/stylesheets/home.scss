@@ -1,3 +1,92 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.secondary-color {
+  color: #fdc441;
+}
+
+.bg-secondary-color {
+  background-color: #fdc441;
+}
+
+// Footer
+
+.bg-footer {
+  background-color: #57616d;
+  font-family: Lato;
+}
+
+.text2-footer {
+  color: #aebccc;
+  font-size: 12px;
+  line-height: 1 !important;
+}
+
+// Section 1
+
+.bg-section1 {
+  font-family: Lato;
+  background-color: #eef2f7;
+  font-style: italic;
+}
+
+.text1-section1 {
+  color: #57616d;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.text2-section1 {
+  color: #ef746f;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+// Section 4
+
+.bg-cards {
+  background-color: #57616d;
+  opacity: 80%;
+}
+
+.text-button {
+  color: #57616d;
+  font-family: Lato;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.text-section4 {
+  font-family: Lato;
+  font-weight: 500;
+  color: #9a9a9a;
+  font-size: 18px;
+  letter-spacing: 4px;
+}
+
+.text-section4-light {
+  font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
