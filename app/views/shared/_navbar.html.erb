@@ -1,10 +1,9 @@
-<!-- This example requires Tailwind CSS v2.0+ -->
-<nav class="bg-gradient-to-t from-gray-100 to-gray-800 bg-opacity-50">
+<nav class="navbar">
   <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
     <div class="relative flex items-center justify-between h-16">
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
         <!-- Mobile menu button-->
-        <button class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-expanded="false">
+        <button class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 focus:outline-none" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <!-- Icon when menu is closed. -->
           <!--
@@ -12,7 +11,7 @@
 
             Menu open: "hidden", Menu closed: "block"
           -->
-          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
           <!-- Icon when menu is open. -->
@@ -21,22 +20,31 @@
 
             Menu open: "block", Menu closed: "hidden"
           -->
-          <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
       </div>
       <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
         <div class="flex-shrink-0 flex items-center sm:ml-16">
-          <img class="block h-8 w-auto" src="https://res.cloudinary.com/rafxss/image/upload/v1613005034/Agape/agape_white_fsuwcx.png" alt="Agape">
+          <a href=""><img class="block h-8 w-auto" src="https://res.cloudinary.com/rafxss/image/upload/v1613005034/Agape/agape_white_fsuwcx.png" alt="Agape"></a>
         </div>
         <div class="hidden sm:block sm:ml-6 sm:mr-16">
           <div class="flex space-x-4">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">CONÓCENOS</a>
-            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">PARTICIPA</a>
-            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">RECURSOS</a>
-            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">DONAR</a>
+            <div class="dropdown">
+            <button class="text-white px-3 py-2 rounded-md text-sm font-medium focus:outline-none" id="user-menu" aria-haspopup="true"><span class="sr-only">Open user menu</span>CONÓCENOS</button>
+              <div class="menu-navbar absolute mt-2 w-48 shadow-xl py-1" role="menu" aria-orientation="vertical" aria-labelledby="user-menu">
+                <a href="#" class="menu-item block px-4 py-2 text-sm" role="menuitem">VISIÓN & MISIÓN</a>
+                <a href="#" class="menu-item block px-4 py-2 text-sm" role="menuitem">STAFF</a>
+                <a href="#" class="menu-item block px-4 py-2 text-sm" role="menuitem">ENFOQUES</a>
+                <a href="#" class="menu-item block px-4 py-2 text-sm" role="menuitem">HISTORIAS DE ÁGAPE</a>
+                <a href="#" class="menu-item block px-4 py-2 text-sm" role="menuitem">HISTORIA ÁGAPE INTERNACIONAL</a>
+              </div>
+            </div>
+            <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium">PARTICIPA</a>
+            <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium">RECURSOS</a>
+            <a href="#" class="bg-secondary-color text-button rounded-full inline-flex items-center px-3 py-1 text-sm font-medium">DONAR</a>
           </div>
         </div>
       </div>
@@ -59,13 +67,8 @@
               From: "transform opacity-100 scale-100"
               To: "transform opacity-0 scale-95"
           -->
-         <!--  <div class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical" aria-labelledby="user-menu">
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Your Profile</a>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Settings</a>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Sign out</a>
-          </div>
         </div>
-      </div> -->
+      </div>
     </div>
   </div>
 
