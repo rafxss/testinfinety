@@ -1,0 +1,33 @@
+.bg-cards {
+  background-color: #57616d;
+  opacity: 80%;
+}
+
+.card {
+  transition: height ease 1s;
+}
+
+.text-button {
+  color: #57616d;
+  font-family: Lato;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.text-section4 {
+  font-family: Lato;
+  font-weight: 500;
+  color: #9a9a9a;
+  font-size: 18px;
+  letter-spacing: 4px;
+}
+
+.text-section4-light {
+  font-weight: 300;
+}
+
+.card:hover .bg-cards {
+  height: 100%;
+}
+
+
