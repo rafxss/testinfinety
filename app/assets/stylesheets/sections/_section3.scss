@@ -70,10 +70,21 @@
 @media (min-width: 1280px) {
   .photo-section3 {
     position: absolute;
-    top: -60px;
+    top: 200px;
     right: 0;
     width: 765px;
+    animation: up 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -0.8s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
   }
+
+  @keyframes up {
+  to {
+    transform:translateY(-500px);
+  }
+}
 
   .bg-section3 {
     background-color: #ef746f;
